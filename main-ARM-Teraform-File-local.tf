@@ -11,12 +11,9 @@ locals {
 
 provider "arm" {
   region     = var.arm_region
-  access_key = var.arm_access_key
   secret_key = var.arm_secret_key
 }
 
-variable "arm_access_key" {
-}
 variable "arm_secret_key" {
 }
 variable "arm_region" {
