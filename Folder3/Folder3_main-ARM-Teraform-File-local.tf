@@ -10,11 +10,14 @@ locals {
 }
 
 provider "arm" {
+client_secret = var.clientsecretkey
 subscription_id = var.azuresubscriptionid
 tenant_id = var.tenantid
 client_id = var.nativclientid
 }
 
+variable "clientsecretkey" {
+}
 variable "azuresubscriptionid" {
 }
 variable "tenantid" {
