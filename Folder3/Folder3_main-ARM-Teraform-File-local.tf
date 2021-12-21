@@ -10,25 +10,24 @@ locals {
 }
 
 provider "arm" {
-  region     = var.arm_region
-  secret_key = var.arm_secret_key
+client_secret = var.clientsecretkey
+subscription_id = var.azuresubscriptionid
+tenant_id = var.tenantid
+client_id = var.nativclientid
 }
 
-variable "arm_secret_key" {
+variable "clientsecretkey" {
 }
-variable "arm_region" {
+variable "azuresubscriptionid" {
 }
-
-variable "mycloud_vpcid" {
-  description = "Name of the vpc used for security group"
-  default     = "test"
-}
-
-variable "azurerm_resource_group" {
-  description = "Name of the resource group"
-  default     = "test"
+variable "tenantid" {
+	
+}variable "nativclientid" {
 }
 
- tags =var.sg_tags
+resource "azurerm_resource_group" "ResourceGroup1" {
+name = "ResourceGroup1_LandingZone"
+location = "eastus"
+}
 
 }
