@@ -28,6 +28,5 @@ variable "tenantid" {
 resource "azurerm_resource_group" "ResourceGroup1" {
 name = "ResourceGroup1_LandingZone"
 location = "eastus"
-}
 
 }
