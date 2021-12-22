@@ -1,7 +1,11 @@
 terraform { 
 backend "local" {} 
-google = {version = "= 3.86.0"}
-			}
+required_providers {
+google = {
+	version = "= 3.86.0"
+         }
+	}
+}
 locals {
   standard_tags = {
     Component   = "user-service"
