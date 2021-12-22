@@ -1,5 +1,6 @@
 terraform { 
-			backend "local" {} 
+backend "local" {} 
+google = {version = "= 3.86.0"}
 			}
 locals {
   standard_tags = {
@@ -17,7 +18,7 @@ variable "gcp_projectid" {
 default = ""
 }
 variable "path" {
-default = ""
+default = "C:/GCP-Account/Account_GCP.json"
 }
 resource "google_compute_instance" "instance1" {
 name = "instance1"
