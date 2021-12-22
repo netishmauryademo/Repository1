@@ -18,7 +18,7 @@ variable "gcp_projectid" {
 default = ""
 }
 variable "path" {
-default = "C:\GCPAccount\Account.json"
+default = "C:/GCPAccount/Account.json"
 }
 resource "google_compute_instance" "instance1" {
 name = "instance1"
