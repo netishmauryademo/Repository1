@@ -14,7 +14,7 @@ locals {
     Environment = "production"
   }
 }
-provider "arm" {
+provider "azurerm" {
 client_secret = var.clientsecretkey
 subscription_id = var.azuresubscriptionid
 tenant_id = var.tenantid
