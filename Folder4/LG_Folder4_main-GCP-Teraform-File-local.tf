@@ -25,7 +25,7 @@ variable "path" {
 default = "C:/GCPAccount/Account.json"
 }
 resource "google_compute_instance" "instance1" {
-name = "instance1"
+name = "instance2"
 provider = google.uscentral1
 machine_type = "e2-medium"
 zone = "us-central1-a"
