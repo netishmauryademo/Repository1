@@ -30,11 +30,7 @@ variable "tenantid" {
 }
 variable "nativclientid" {
 }
-variable "tags" {
-  default = ""
-}
 resource "azurerm_resource_group" "ResourceGroup1" {
 name = "ResourceGroup1_LandingZone"
 location = "eastus"
-tags = var.tags
 }
