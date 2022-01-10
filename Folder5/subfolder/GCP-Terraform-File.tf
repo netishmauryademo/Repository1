@@ -28,7 +28,7 @@ resource "google_compute_instance" "instance1" {
 name = "instance1"
 provider = google.uscentral1
 machine_type = "e2-medium"
-zone = "us-central1-a"
+zone = "us-central1-c"
 boot_disk {
 auto_delete = "true"
 initialize_params {
