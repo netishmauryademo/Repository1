@@ -31,6 +31,6 @@ variable "tenantid" {
 variable "nativclientid" {
 }
 resource "azurerm_resource_group" "ResourceGroup1" {
-name = "ResourceGroup4_LandingZone"
+name = "ResourceGroup3_LandingZone"
 location = "eastus"
 }
